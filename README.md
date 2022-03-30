@@ -1,2 +1,5 @@
-# ObsidianSnippits
-Snippits I use for my Obsidian Notes workflow
+# ObsidianSnippets
+Snippets I use for my Obsidian Notes workflow
+
+[Obsidian.md](https://obsidian.md/)
+
