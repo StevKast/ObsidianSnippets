@@ -1,0 +1,28 @@
+
+
+img[alt~="sm"] {
+    width: 25%;
+}
+
+img[alt~="md"] {
+    width: 50%;
+}
+
+img[alt~="lg"] {
+    width: 75%;
+}
+
+img[alt~="max"] {
+    width: 100%;
+}
+
+img[alt~="crisp"] {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+img[alt~="center"] {
+    margin: auto;
+    display: block;
+}

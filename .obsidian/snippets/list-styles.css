@@ -1,0 +1,31 @@
+/*.cm-s-obsidian .HyperMD-list-line-1 {
+     color: red;
+     font-size: 1.2em;
+}
+
+.cm-s-obsidian .HyperMD-list-line-2 {
+    color: yellow;
+    font-size: 1.2em;
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-1 {
+    color: purple;
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-2 {
+    color: yellow;
+}
+*/
+
+span.list-bullet:after{
+    content: '-' !important;
+}
+
+li::marker {
+    content: '- ';
+    font-size: 1.2em;
+}
+
+ol, ul{
+    padding-inline-start: 1.2em;
+}

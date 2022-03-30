@@ -1,0 +1,13 @@
+*.md
+
+Assets/Images
+!Assets/Views/*
+!Assets/Templates/*
+
+.obsidian/plugins
+.obsidian/*.json
+.obsidian/workspace
+!.obsidian/snippets/*
+
+!README.md
+!.gitignore
