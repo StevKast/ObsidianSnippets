@@ -91,6 +91,7 @@
 
   .tag[href^="#buy"], .cm-line span.cm-tag-buy{
     background-color: var(--material-color-green-500);
+    color: #003000;
   }
 
   .tag[href^="#plants"], .cm-line span.cm-tag-plants{
@@ -106,6 +107,14 @@
     color: #ffff61;
   }
 
+  .tag[href^="#etsy"], .cm-line span.cm-tag-etsy{
+    background-color: var(--material-color-amber-900);
+  }
+
+  .tag[href^="#3d-printer"], .cm-line span.cm-tag-3d-printer{
+    background-color: var(--material-color-deep-purple-800);
+  }
+
   .tag[href^="#work"], .cm-line span.cm-tag-work{
     background-color: var(--material-color-blue-700);
   }
@@ -116,7 +125,7 @@
   }
 
   .tag[href^="#dev"], .cm-line span.cm-tag-dev{
-    background-color: var(--material-color-deep-purple-900);
+    background-color: var(--material-color-teal-800);
   }
 
   .tag[href^="#server"], .cm-line span.cm-tag-server{

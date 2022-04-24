@@ -5,7 +5,7 @@ dv.table(["Name", "Birthday", "Time Until"], dv.pages('"People"')
     .filter(p => p.birthday)
     .map(p => [
         p.alias[0] || p.file.name,
-        formatBDay(p.birthday),
+        formatBDay(parseBDayCurrentYear(p.birthday)),
         formattedDaysUntil(p.birthday)
     ]))
 
@@ -19,7 +19,11 @@ function parseBDayCurrentYear(birthday) {
 }
 
 function hasPassed(birthday) {
-    return parseBDayCurrentYear(birthday).diffNow().toMillis() < 0;
+    return parseBDayCurrentYear(birthday).diffNow().toMillis() < 0 && !isToday(birthday);
+}
+
+function isToday(date) {
+    return date.day === DateTime.now().day;
 }
 
 function daysUntil(birthday) {
@@ -34,6 +38,7 @@ function daysUntil(birthday) {
 
 function formattedDaysUntil(birthday) {
     var timeUntil = daysUntil(birthday);
+
     if (timeUntil.count('days') > 42)
         return (timeUntil.count('months') - 1) + " Months";
     else if (timeUntil.count('days') > 28)
