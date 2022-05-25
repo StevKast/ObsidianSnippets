@@ -7,7 +7,9 @@ dv.table(["Name", "Birthday", "Time Until"], dv.pages('"People"')
         p.alias[0] || p.file.name,
         formatBDay(parseBDayCurrentYear(p.birthday)),
         formattedDaysUntil(p.birthday)
-    ]))
+    ])
+    .limit(5)
+);
 
 function formatBDay(birthday) {
     return DateTime.fromISO(birthday)
@@ -23,7 +25,7 @@ function hasPassed(birthday) {
 }
 
 function isToday(date) {
-    return date.day === DateTime.now().day;
+    return date.day === DateTime.now().day && date.month === DateTime.now().month;
 }
 
 function daysUntil(birthday) {
