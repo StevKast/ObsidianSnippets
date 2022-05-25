@@ -1,22 +1,19 @@
 # <% tp.date.now("dddd MMMM Do YYYY") %>
 Q<% tp.date.now("Q") %> - <% tp.date.now("wo") %> Week of Year
-## Todo
+## Todo 📝
 
 
-## Ideas / Thoughts
+## Ideas / Thoughts 💭
 - 
 
-## Cool Links
-- 
+> [!tldr]- [[Task Backlog]]
+> ```dataviewjs 
+> dv.view("Assets/Scripts/Views/TaskBacklog") 
+> ```
 
-## Daily Vibes
-Migraine:: 
-Meals::
-### Log
-- 
-
-```dataviewjs
-dv.view("Assets/Scripts/Views/UpcomingBirthdays")
-```
+> [!tip]+ Upcoming Birthdays
+> ```dataviewjs 
+> dv.view("Assets/Scripts/Views/UpcomingBirthdays")
+> ```
 
 [[Daily Note Template]]
